@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Uibrush Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href='http:///fonts.useso.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+	<!-- start plugins -->
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="menu">
+				<a class="toggleMenu" href="#"><img src="images/menu.png" alt="" /> </a>
+				<ul class="nav" id="nav">
+					<li><a href="index.html">主页</a></li>
+					<li><a href="about.html">概述</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="portfolio.html">图片展示</a></li>
+					<li><a href="blog.html">数据库</a></li>
+					<li class="current"><a href="contact.html">联系我们</a></li>								
+				</ul>
+				<script type="text/javascript" src="js/responsive-nav.js"></script>
+			</div>							
+			<div class="clearfix"> </div>
+			<!----//End-top-nav---->
+		</div>
+	</div>
+	<div class="about">
+		<div class="container">
+			<ul class="about_head">
+				<li class="about_head-left"><h1>数据库</h1></li>
+				<li class="about_head-right"><p>本数据库利用XML标注图片信息，并采取Mysql管理图像</p></li>
+			</ul>	
+		</div>	  
+	</div> 
+	<div class="container">
+		<div class="blog">
+			<div class="col-md-9">
+				<div class="blog_left">
+					<h3> 
+						<a name="structure">数据集结构</a></h3>
+						<ul class="blog_links">
+							<li><i class="blog_icon1"> </i><span>烟叶图像数据库</span></li>
+							<li><i class="blog_icon2"> </i><span>产区</span></li>
+							<li><i class="blog_icon3"> </i><span>等级</span></li>
+							<li><i class="blog_icon4"> </i><span>图片和XML文件</span></li>
+						</ul>
+						
+						<a href="single.html"><img src="images/b1.jpg" class="img-responsive" alt=""/></a>
+						<ul class="database_stru">
+							<li>一级目录为烟叶图像数据库</li>
+						    <li>二级目录按照不同产区分开存储</li>
+					        <li>产区文件夹下依照不同等级单独存储</li>
+				            <li>每个等级下包含JPG图像文件和与之对应的XML标注文件</li>
+				         
+						    <li><a href="https://pan.baidu.com/s/1oF8Lxr6VSrvsXsk_gfUGyw?pwd=x77i" target="_blank" name="xiazai">
+						     百度网盘下载链接，提取码：x77i</a></li>
+						</ul>
+					</div>
+					<div class="blog_left">
+						<h3><a name="xml">XML标注</a></h3>
+						<ul class="blog_links">
+							<li><i class="blog_icon1"> </i><span>图像基本信息</span></li>
+							<li><i class="blog_icon2"> </i><span>图像采集参数</span></li>
+							<li><i class="blog_icon3"> </i><span>烟叶样本信息</span></a></li>
+							<li><i class="blog_icon4"> </i><span>图像质量评分</span></li>
+						</ul>
+						<a href="single.html"><img src="images/b2.jpg" class="img-responsive" alt=""/></a>
+						<p>为使得图像能够更好地进行分类与识别任务，给烟叶样品图像数据集提供丰富的标注信息，主要包括图像基本信息、图像采集系统参数、烟叶样本信息、图像质量评分。其中图像基本信息中的图像尺寸、图像分辨率、图片格式均有相关规范严格要求；图像采集系统为统一一套采集系统，主要包括焦距、光圈孔径、曝光等参数；烟叶样本信息则针对烟叶等级、品种进行规定；图像质量评分从主观、客观两个角度，多指标对图像质量进行综合评价。标签数据使用xml文件格式组织。</p>
+						<!-- <a href="#" title="Read More" class="btn3" target="_self">Read More...</a> -->
+					</div>
+					<div class="blog_left blog_last">
+						<h3><a name="mysql">MySQL数据库</a></h3>
+						<ul class="blog_links">
+							<li><i class="blog_icon1"> </i><span>产地及等级</span></li>/
+							<li><a href="#"><i class="blog_icon2"> </i><span>存储路径</span></a></li>/
+							<li><a href="#"><i class="blog_icon3"> </i><span>文件夹体量</span></a></li>/
+							<li><a href="#"><i class="blog_icon4"> </i><span>采样时间</span></a></li>
+						</ul>
+						<a href="single.html"><img src="images/b3.jpg" class="img-responsive" alt=""/></a>
+						<p>利用MySQL数据库，为烟叶图像进行存档，主要字段包括烟叶产地及品种、在硬盘的存储位置、文件夹中图像数据的数目和占据硬盘空间大小、图像入库时间等，以此方便数据的管理与维护。</p>
+
+					   
+						</div>
+					</div>
+					<div class="col-md-3 sidebar">
+						<div class="sidebar_top">
+							<!-- <h3>内容检索</h3>
+							<div class="search">
+								<form>
+									<input type="text" value="Enter to search..." onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+									<input type="submit" value="">
+								</form>
+							</div> -->
+						</div>
+						<div class="sidebar_top">
+							<h3>目录</h3>
+							<ul class="list_3">
+								<li><a href="#">
+									<div class="product_no"><p> 
+										<a href="#structure">数据集结构</a>
+									</p></div>
+									<div class="product_no-right"> </div>
+									<div class="clearfix"> </div>
+								</a></li>
+
+								<li><a href="#">
+									<div class="product_no"><p>
+										<a href="#xml">XML标注</a></p></div>
+										<div class="product_no-right"> </div>
+										<div class="clearfix"> </div>
+									</a></li>
+                                
+									<li><a href="#">
+										<div class="product_no"><p>
+											<a href="#mysql">MySQL数据库</a></p></div>
+											<div class="product_no-right"> </div>
+											<div class="clearfix"> </div>
+										</a></li>
+									</ul>
+								</div>
+								<div class="sidebar_top">
+									<h3>照片展示</h3>
+									<ul class="gallery">
+										<li><img src="images/g1.jpg" class="img-responsive" alt=""/></li>
+										<li><img src="images/g2.jpg" class="img-responsive" alt=""/></li>
+										<li class="last"><img src="images/g3.jpg" class="img-responsive" alt=""/></li>
+									</ul>
+									<ul class="gallery">
+										<li><img src="images/g4.jpg" class="img-responsive" alt=""/></li>
+										<li><img src="images/g5.jpg" class="img-responsive" alt=""/></li>
+										<li class="last"><img src="images/g6.jpg" class="img-responsive" alt=""/></li>
+									</ul>
+									<ul class="gallery">
+										<li><img src="images/g7.jpg" class="img-responsive" alt=""/></li>
+										<li><img src="images/g8.jpg" class="img-responsive" alt=""/></li>
+										<li class="last"><img src="images/g9.jpg" class="img-responsive" alt=""/></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>	
+					<div class="footer">
+						<div class="container">
+							<div class="col-md-3 box_3">
+								<h3>版权所有</h3>
+								<p>物联网与大数据开放实验室<br>|物理（微电子）学院|郑州大学</p>
+								<p></p>
+								<p>最近更新时间:2023年11月15日<br>16点28分43秒</p>
+							</div>
+							<div class="col-md-3 box_5">
+								<h3>同类型数据库</h3>
+								<div class="footer-list">
+									<ul>
+										<li class="list_top"><i class="arrow"> </i>
+											<p>罗布斯塔咖啡叶图像数据集<br><a href="https://www.kaggle.com/datasets/diegopgonzlez/rocoleoriginal" target="_blank">RoCoLe</a></p></li>
+											<li class="list_top"><i class="arrow"> </i>
+												<p>病株叶片图像数据集<br><a href="https://beerys.github.io/CaltechCameraTraps/" target="_blank">PlantVillage Dataset</a></p></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 box_5">
+										<h3>Site Map</h3>
+										<div class="footer-list1">
+											<ul>
+												<li><a href="index.html">主页</a></li>
+												<li><a href="about.html">概述</a></li>
+												<li><a href="services.html">Services</a></li>
+												<li><a href="portfolio.html">图片展示</a></li>
+												<li><a href="blog.html">数据库</a></li>
+												<li><a href="contact.html">联系我们</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 box_5">
+										<h3>Contact Us</h3>
+										<div class="footer-list">
+											<ul>
+												<li class="list_top"><i class="location"> </i>
+									            <p>中国××省××市××区</p></li>
+									            <li class="list_top"><i class="phone"> </i>
+										        <p>400-8888-8888</p></li>
+													</ul>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="footer_bottom">
+										<div class="container">
+											<div class="copy">
+
+											</div>
+											<ul class="footer_social">
+												<li><a href=""> <i class="fb"> </i> </a></li>
+												<li><a href=""><i class="tw"> </i> </a></li>
+												<li><a href=""><i class="instagram"> </i> </a></li>
+												<li><a href=""><i class="linkedin"> </i> </a></li>
+											</ul>
+										</div>
+									</div>
+								</body>
+								</html>		

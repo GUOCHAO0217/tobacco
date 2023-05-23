@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Uibrush Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http:///fonts.useso.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+<!-- start plugins -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+<!-- start light_box -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox-1.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("div.fancyDemo a").fancybox();
+		});
+	</script>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" alt=""></a>
+	</div>
+    <div class="menu">
+	   <a class="toggleMenu" href="#"><img src="images/menu.png" alt="" /> </a>
+	   <ul class="nav" id="nav">
+		  <li><a href="index.html">主页</a></li>
+		 <li><a href="about.html">概述</a></li>
+		 <li><a href="services.html">Services</a></li>
+		 <li><a href="portfolio.html">图片展示</a></li>
+		 <li><a href="blog.html">数据库</a></li>
+		 <li class="current"><a href="contact.html">联系我们</a></li>							
+	  </ul>
+	  <script type="text/javascript" src="js/responsive-nav.js"></script>
+	</div>							
+    <div class="clearfix"> </div>
+	<!----//End-top-nav---->
+  </div>
+</div>
+<div class="about">
+	<div class="container">
+		<ul class="about_head">
+			<li class="about_head-left"><h1>图片展示</h1></li>
+			<li class="about_head-right"><p>本数据库汇聚了数个等级、多种形态的各类烟叶</p></li>
+		</ul>	
+	</div>	  
+</div> 
+<div class="container">
+     <div class="portfolio_main">
+     	  <h2>烟叶图片</h2>
+						<ul id="filters" class="clearfix">
+							<li>
+								<span class="filter active" data-filter="app card icon web">汇总</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="app  icon">上部烟</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="card ">中部烟</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="icon app card ">下部烟</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="web card icon">其他</span>
+							</li>
+						</ul>
+						<div id="portfoliolist">
+							<div class="portfolio logo1" data-cat="logo">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p1.jpg"><img src="images/p1.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种1</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p2.jpg"><img src="images/p2.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种2</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio web" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p3.jpg"><img src="images/p3.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种3</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p4.jpg"><img src="images/p4.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种4</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p5.jpg"><img src="images/p5.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种2</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p6.jpg"><img src="images/p6.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种4</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p7.jpg"><img src="images/p7.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种4</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio logo1" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p8.jpg"><img src="images/p8.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种1</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p9.jpg"><img src="images/p9.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种2</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p10.jpg"><img src="images/p10.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">品种4</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+		</div>
+</div>	
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 box_3">
+			<h3>版权所有</h3>
+				<p>物联网与大数据开放实验室<br>|物理（微电子）学院|郑州大学</p>
+				<p>最近更新时间:2023年11月15日<br>16点28分43秒</p>
+		</div>
+		<div class="col-md-3 box_5">
+			<h3>同类型数据库</h3>
+			<div class="footer-list">
+				<ul>
+					<li class="list_top"><i class="arrow"> </i>
+						<p>罗布斯塔咖啡叶图像数据集<br><a href="https://www.kaggle.com/datasets/diegopgonzlez/rocoleoriginal" target="_blank">RoCoLe</a></p></li>
+						<li class="list_top"><i class="arrow"> </i>
+							<p>病株叶片图像数据集<br><a href="https://beerys.github.io/CaltechCameraTraps/" target="_blank">PlantVillage Dataset</a></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 box_5">
+					<h3>Site Map</h3>
+					<div class="footer-list1">
+						<ul>
+							<li><a href="index.html">主页</a></li>
+							<li><a href="about.html">概述</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="portfolio.html">图片展示</a></li>
+							<li><a href="blog.html">数据库</a></li>
+							<li><a href="contact.html">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 box_5">
+					<h3>Contact Us</h3>
+					<div class="footer-list">
+						<ul>
+				    <li class="list_top"><i class="location"> </i>
+									<p>中国××省××市××区</p></li>
+									<li class="list_top"><i class="phone"> </i>
+										<p>400-8888-8888</p></li>
+		       </ul>
+		    </div>
+		    
+		</div>
+	</div>
+</div>
+<div class="footer_bottom">
+	<div class="container">
+		<div class="copy">
+			
+		</div>
+		<ul class="footer_social">
+		  <li><a href=""> <i class="fb"> </i> </a></li>
+		  <li><a href=""><i class="tw"> </i> </a></li>
+		  <li><a href=""><i class="instagram"> </i> </a></li>
+		  <li><a href=""><i class="linkedin"> </i> </a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>		
